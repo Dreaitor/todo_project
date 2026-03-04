@@ -2,10 +2,12 @@ package com.zhang.todo_project_server.controller;
 
 import com.zhang.todo_project_server.entity.Todo;
 import com.zhang.todo_project_server.service.TodoService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+@Tag(name = "增删改查接口")
 @CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/todos")
